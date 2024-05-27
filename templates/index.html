@@ -1,0 +1,304 @@
+{% extends "base.html" %}
+
+{% block title %}home{% endblock title %}home
+
+{% block body %}
+<div class="container-fluid" style="width: 100%; height: 100vh;
+ background-image: url('/static/rk.png');
+ background-size: cover; background-position: center; background-repeat: no-repeat;">
+</div>
+<style>                                                                                     
+    .horizontal-card {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+    }
+    .horizontal-card:hover {
+        transform: translateY(-5px);
+    }
+    .horizontal-card-img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+    .horizontal-card-img:hover {
+        transform: scale(1.1);
+    }
+    .card-body {
+        padding: 50px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    .card-title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+.custom-bg-brown {
+    background-color: #14464beb;
+}
+
+.custom-text-dark-orange {
+    color: white;
+}
+.thumbnail img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+}
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+#tech{
+    font-size:28px;
+    justify-content: center;
+    color:white;
+}
+.tech {
+    padding: 5px;
+    margin-bottom: 15px;
+    max-width: max-content;
+    margin-right: 15px;
+    border-radius: 16px;
+    background-color: #6ef3a6;
+    transition: 0.5s;
+}
+
+.tech-icon {
+    background-color: gr;
+
+}
+
+.tech:hover {
+    cursor: default;
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--primary-green);
+}
+
+
+.tech-label {
+    color: black;
+    background-color: transparent;
+    font-size: 12px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#tech-stack-text {
+    color: white;
+    width: 490px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.stack-illustration {
+    padding-left: 5%;
+}
+
+.label-stack {
+    font-size: 20px;
+    color:white;
+}
+
+.tech-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-div {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-div {
+    padding-left: 10%;
+}
+
+.contact-row {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.contact-card {
+    margin-top: 4%;
+    width: 400px;
+    height: 80px;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--bg-dark);
+    transition: .5s;
+}
+
+.contact-card:hover {
+    text-decoration: none;
+    box-shadow: 0px 0px 10px var(--primary-green);
+    cursor: pointer;
+}
+
+#mail-icon {
+    font-size: 24px;
+    background-color: transparent;
+    color: var(--primary-green);
+}
+
+.contact-label {
+    margin-left: 5%;
+    color: var(--primary-green);
+    width: 100%;
+}
+
+#chevron-icon {
+    background-color: transparent;
+    color: var(--primary-green);
+}
+
+.line {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    border: solid 0.1px var(--bg-dark);
+}
+
+.social-contact-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#meet-btn {
+    transition: .5s;
+}
+
+#meet-btn:hover {
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--primary-green);
+}
+body {
+    background-color: #2d2e32;
+}
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+}
+
+.foot-text {
+    color: black    
+}
+
+.foot-name {
+    margin-left: 25px;
+    color: black;
+}
+</style>
+</head>
+<body>
+<section class="container-fluid py-2">
+    <div class="row justify-content-center">
+        <div class="col-md-14">
+            <div class="card horizontal-card custom-bg-brown custom-text-dark-orange">
+                <div class="row no-gutters">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="/static/pp.jpg" class="card-img horizontal-card-img" alt="Placeholder Image">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Rohan Khan</h5>
+                            <p class="card-text">I'm a Software Engineer with expertise in full-stack development. My passion lies in crafting robust, scalable, and user-friendly web applications. With a keen eye for detail and a commitment to excellence, I strive to deliver high-quality solutions that exceed expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="fully">
+<div id="tech" class=" tech-stack">
+    <div class="tech-stack-detail">
+        <p id="tech-stack-title">Tech Stack</p>
+        <p id="tech-stack-text">
+            Change is inevitable, so I keep on exploring new technology,
+            learn it in a minimal possible way and then build something
+            out of it to see how well I did :)
+        </p>   
+
+        <p class="label-stack">Mobile development</p>
+        <div id="mobile-tech" data-aos="fade-right" data-aos-delay="200" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/flutter.svg" alt="Flutter"><span class="tech-label">Flutter</span></div><div class="tech"><img class="tech-icon" src="/static/dart.svg" alt="Dart"><span class="tech-label">Dart</span></div></div>
+
+        <p class="label-stack">Web development</p>
+        <div id="web-tech" data-aos="fade-right" data-aos-delay="300" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/html.svg" alt="HTML 5"><span class="tech-label">HTML 5</span></div><div class="tech"><img class="tech-icon" src="/static/css.svg" alt="CSS 3"><span class="tech-label">CSS 3</span></div><div class="tech"><img class="tech-icon" src="/static/bootstrap.svg" alt="Bootstrap"><span class="tech-label">Bootstrap</span></div><div class="tech"><img class="tech-icon" src="/static/js.svg" alt="Javascript"><span class="tech-label">Javascript</span></div></div>
+
+        <p class="label-stack">Server side</p>
+        <div id="server-tech" data-aos="fade-right" data-aos-delay="400" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/flask.svg" alt="Flask Restful"><span class="tech-label">Flask Restful</span></div><div class="tech"><img class="" src="/static/python1.svg" alt="" style="height: 25px;"><span class="tech-label">python</span></div><div class=""><img class="" src="images/tech/express.svg" alt=""><span class=""></span></div><div class="tech"><img class="tech-icon" src="/static/api.svg" alt="REST APIs"><span class="tech-label">REST APIs</span></div><div class=""><img class="tech-icon" src="/static/dart_frog.svg" alt="" style=""><span class=""></span></div></div>
+
+        <p class="label-stack">Databases</p>
+        <div id="database-tech" data-aos="fade-right" data-aos-delay="500" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/firebase.svg" alt="Firebase"><span class="tech-label">Firebase</span></div><div class="tech"><img class="tech-icon" src="/static/mongo.svg" alt="MongoDB"><span class="tech-label">MongoDB</span></div><div class=""><img class="tech-icon" src="" alt=""><span class="tech-label"></span></div></div>
+
+        <p class="label-stack">Version controlloing &amp; management</p>
+        <div id="vc-tech" data-aos="fade-right" data-aos-delay="600" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/github.svg" alt="GitHub"><span class="tech-label">GitHub</span></div><div class="tech"><img class="tech-icon" src="/static/jira.svg" alt="Jira"><span class="tech-label">Jira</span></div><div class=""><img class="tech-icon" src="" alt=""></div><div class=""></div></div>
+
+        <p class="label-stack">UI/UX Design</p>
+        <div id="design-tech" data-aos="fade-right" data-aos-delay="700" class="tech-row aos-init aos-animate"><div class="tech"><img class="tech-icon" src="/static/figma.svg" alt="Figma"><span class="tech-label">Figma</span></div><div class="tech"><img class="tech-icon" src="/static/adobexd.svg" alt="Adobe XD"><span class="tech-label">Adobe XD</span></div></div>
+    </div>
+
+    <div class="stack-illustration">
+        <img id="stack-illustration" src="/static/stack.svg" alt="stack illustrations">
+    </div>       
+</div>
+</div>
+
+{% comment %} <section class="tech-stack">
+    <div class="container">
+        <h2 class="text-center mb-4">Tech Stack</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tech-category">
+                    <h3>Mobile Development</h3>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tech-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add other columns for Server side, Databases, Version controlling & management, UI/UX Design, etc. -->
+        </div>
+    </div>
+</section> {% endcomment %}
+<footer class="foot">
+    <span class="body2 foot-text">Designed &amp; Crafted by </span>
+    <span style="background-color: transparent; color: black; padding-left: 5px; justify-content:center "> Rohan
+        Khan</span>
+</footer>
+    
+{% endblock body %}
